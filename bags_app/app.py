@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 # import functions from separate file
-from utils import get_shop, median
+from utils import load_data, get_shop, median
 
 # layout and titling
 st.set_page_config(layout="wide")

@@ -4,6 +4,11 @@ import streamlit as st
 DATA_FILEPATH = "bags.csv"
 
 # functions
+
+def load_data(data_filepath=DATA_FILEPATH):
+    df = pd.read_csv(data_filepath)
+    return df
+
 def get_shop(df):
     """Returns the list of shops in the dataset."""
     shop = df["Company"].unique()
