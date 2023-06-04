@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 
-DATA_FILEPATH = "bags.csv"
+DATA_FILEPATH = "data/bags.csv"
 
 def load_data(data_filepath=DATA_FILEPATH):
     df = pd.read_csv(data_filepath)
