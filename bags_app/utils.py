@@ -3,8 +3,6 @@ import streamlit as st
 
 DATA_FILEPATH = "bags.csv"
 
-# functions
-
 def load_data(data_filepath=DATA_FILEPATH):
     df = pd.read_csv(data_filepath)
     return df

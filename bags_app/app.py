@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-# import functions from separate file
+# import functions from separate utils.py file
 from utils import load_data, get_shop, median
 
 # layout and titling
@@ -10,9 +10,7 @@ st.title('Vanishing bags')
 # sidebar titling
 with st.sidebar:
     st.header('Single-use plastic bags in England, the first six years')
-    st.write(
-        "The money each company collected, once single-use plastic bag charges came in (2016)"
-    )
+    st.write("The money each company collected, once single-use plastic bag charges came in (2016)")
 
 # assign data to df
 df = load_data()
