@@ -15,7 +15,7 @@ with st.sidebar:
     )
 
 # assign data to df
-df = pd.read_csv('bags.csv')
+df = load_data()
 
 # title bar chart then show by calling function in utils.py, and add divider
 st.header('Median value of money and donations')
